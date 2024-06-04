@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.home-sec {
+    height: 70vh;
+    width: 100%;
+}
+
+.home {
+    height: 100%;
+}
+
+.container, .myself {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 50px 50px;
+}
+.home .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    height: 100%;
+}
+
+.intro, .profession {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.intro p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.2em;
+}
+.intro h1 {
+    font-size: 4em;
+    font-family: "Libre Bodoni", serif;
+    font-weight: normal;
+    color: #2A2A72;
+}
+.intro button {
+    border: none;
+    padding: 10px 35px;
+    margin-top: 10px;
+    font-size: 1.2em;
+    background-color: #2A2A72;
+    color: #FFC000;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    max-width: 200px;
+}
+.intro button:hover {
+    background-color: #FFC000;
+    color: #2A2A72;
+}
+
+.profession {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.profession p {
+    font-size: 3em;
+}
+.profession p:nth-child(1) {
+    font-family: "Ubuntu Sans Mono", monospace;
+    margin-bottom: -30px;
+}
+.p2 {
+    font-family: "Bodoni Moda", serif;
+    font-weight: bold;
+    margin-top: -60px;
+}
+.profession h1 {
+    font-size: 9em;
+    color: #FFC000;
+    font-family: "Montserrat", sans-serif;
+}
+
+.myself-sec {
+    height: 30vh;
+    background-color: #FFC000;
+}
+.myself {
+    font-size: 1rem;
+}
+.myself p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+.myself p:nth-child(1) {
+    font-style: italic;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+.myskills-sec {
+    padding: 40px 0;
+}
+.myskills .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem
+}
+.myskills .container h1 {
+    font-size: 3em;
+    color: #2A2A72;
+    font-family: "Montserrat", sans-serif;
+}
+.progress-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: space-around;
+    width: 100%;
+}
+
+.progress-grid div {
+    margin: 20px 0;
+}
+
+.progress-grid div p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2em;
+}
+
+.progress-bar {
+    margin: 10px 0;
+    height: 10px;
+    width: 90%;
+    background-color: #2A2A72;
+    position: relative;
+}
+.progress-bar div {
+    height: 10px;
+    background-color: #FFC000;
+}
+
+.softSkills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin-top: 50px;
+}
+.softSkill {
+    display: flex;
+    align-items: center;
+    background-color: rgb(223, 223, 223);
+    padding: 20px;
+    border-radius: 15px;
+}
+.softSkill img {
+    width: 50px;
+    height: auto;
+}
+.softSkill p {
+    margin-left: 30px;
+    font-size: 1.2em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.softSkill span {
+    color: #2A2A72;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.contactMe-sec {
+    background-color: #D9D9D9;
+}
+
+.contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact .container h1 {
+    font-size: 3em;
+    color: #2A2A72;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact-catch {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.contact span {
+    font-weight: bold;
+}
+
+.email, .instagram {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    justify-content: center;
+}
+.email p, .instagram p {
+    font-family: "Montserrat", sans-serif;
+    width: auto;
+    font-size: 1.5em;
+}
+
+.email span {
+    margin: 0;
+}
+
+.contact .container img {
+    height: 30px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.footer-sec {
+    background-color: #FFC000;
+}
+
+@media only screen and (max-width: 1000px) {
+    html {
+        width: 100%;
+    }
+
+    .home-sec {
+        height: 70vh;
+    }
+
+    .home .container {
+        flex-direction: column;
+        align-items: space-between;
+        padding: 10px;
+        height: 100%;
+    }
+
+    .intro, .profession {
+        width: 100%;
+        height: 50%; 
+        font-size: 0.8rem;
+        align-items: center;
+        margin: 25px 0;
+    }
+
+    .profession {
+        justify-content: flex-start;
+    }
+    .intro {
+        justify-content: flex-end;
+    }
+
+    .intro p {
+        font-size: 1.8em;
+    }
+    .intro h1 {
+        font-size: 3em;
+    }
+
+    .myself-sec {
+        height: auto;
+    }
+    .myself {
+        font-size: 0.6em;
+    }
+
+    .contact-catch {
+        font-size: 1em;
+    }
+
+    .email, .instagram {
+        font-size: 0.8rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact .container img {
+        margin: 10px 0;
+    }
+}
